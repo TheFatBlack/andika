@@ -29,7 +29,22 @@
                                 <a class="nav-link" href="index.php?halaman=hari1">hari1</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="index.php?halaman=hari2">hari2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?halaman=hari3">hari3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?halaman=hari4">hari4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?halaman=hari5">hari5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?halaman=hari6">hari6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?halaman=hari7">hari7</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -45,11 +60,39 @@
 
         if(isset($_GET['halaman'])){
             switch ($_GET['halaman']){
-                case "hari1":
-                    include "harikedua/index.php";
-                    break;
-                default:
+                case "welcome":
                     include "welcome.php";
+                    break;
+
+                    case "hari1":
+                        include "haripertama/index.php";
+                        break;
+
+                        case "hari2":
+                            include "harikedua/belajar.php";
+                            include "harikedua/menghitung.php";
+                            include "harikedua/volume.php";
+                            break;
+
+                            case "hari3":
+                                include "hariketiga/index.php";
+                                break;
+
+                                case "hari4":
+                                    include "hari keempat/percabangan.php";
+                                    break;
+
+                                    case "hari5":
+                                        include "hari kelima/index.php";
+                                        break;
+                                        
+                                    case "hari6":
+                                        include "hari keenam/pengulangan.php";
+                                        break;
+                                        
+                                    case "hari7":
+                                        include "hari ketujuh/index.php";
+                                        break;
             }
         }else{
             include "welcome.php";
