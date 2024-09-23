@@ -93,6 +93,15 @@
                                     case "hari7":
                                         include "hari ketujuh/index.php";
                                         break;
+                                    case "link1":
+                                        include "hari ketujuh/link1.php";
+                                        break;
+                                    case "link2":
+                                        include "hari ketujuh/link2.php";
+                                        break;
+                                    
+                            default:
+                            include "welcome.php";
             }
         }else{
             include "welcome.php";
